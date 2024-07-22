@@ -1,0 +1,26 @@
+# TokenMetricsX.py
+
+class TokenMetricsX:
+    def __init__(self, platform_name, metrics_features):
+        self.platform_name = platform_name
+        self.metrics_features = metrics_features
+    
+    def display_platform_info(self):
+        print(f"Platform Name: {self.platform_name}")
+        print("Metrics Features:")
+        for feature in self.metrics_features:
+            print(f"- {feature}")
+
+# Example usage
+if __name__ == "__main__":
+    platform_name = "TokenMetricsX"
+    metrics_features = [
+        "Token price analysis",
+        "Market capitalization tracking",
+        "Volume and liquidity monitoring",
+        "Token distribution analytics",
+        "Historical price charts"
+    ]
+    
+    token_metrics = TokenMetricsX(platform_name, metrics_features)
+    token_metrics.display_platform_info()
